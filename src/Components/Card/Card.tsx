@@ -1,8 +1,9 @@
 import React from "react";
 import { CardProps } from "./CardModel";
 import { useCard } from "./useCard";
-import { Modal } from "../Modal/Modal";
+import { ModalInfo } from "../Modal/ModalInfo";
 import "./cardStyle.css";
+import { Button } from "@mui/material";
 
 export const Card: React.FC<CardProps> = ({
   imageSrc,
@@ -17,10 +18,16 @@ export const Card: React.FC<CardProps> = ({
     <article className="card">
       <img src={imageSrc} alt={altImage} />
       <p>{text}</p>
-      <button onClick={handleCardClick}>Mas Información</button>
-      {isModalOpen && (
-        <Modal title={modalTitle} text={modalText} onClose={closeModal} />
-      )}
+      <Button onClick={handleCardClick} variant="contained">
+        Mas Información
+      </Button>
+
+      <ModalInfo
+        title={modalTitle}
+        text={modalText}
+        onClose={closeModal}
+        open={isModalOpen}
+      />
     </article>
   );
 };

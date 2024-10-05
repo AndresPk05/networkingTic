@@ -13,8 +13,3 @@
   max-width: 100%;
   height: auto;
 }
-
-.card button{
-    background: var(--color-background-dark);
-    color: var(--color-text-white);
-}

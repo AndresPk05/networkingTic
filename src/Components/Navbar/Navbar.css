@@ -25,10 +25,10 @@
 }
 
 .navbar-item img {
-  width: 6.5rem;
+  width: 6rem;
   height: 6rem;
 }
 
-.navbar-item a:hover {
+.navbar-item h6:hover {
   color: var(--color-secondary);
 }
