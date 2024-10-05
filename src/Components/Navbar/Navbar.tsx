@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import "./Navbar.css";
-import logo from "../../assets/logo.png";
+import logo from "@assets/logo3.png";
 import HomeIcon from "@mui/icons-material/Home";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
 import ForumIcon from "@mui/icons-material/Forum";
@@ -17,10 +17,18 @@ export const Navbar: React.FC = () => {
   return (
     <AppBar position="fixed">
       <Toolbar>
-        <Box className="navbar-item">
-          <img src={logo} alt="logo"  />
-        </Box>
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexGrow: 1, gap: 10 }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexGrow: 1,
+            gap: 10,
+          }}
+        >
+          <Box className="navbar-item">
+            <img src={logo} alt="logo" />
+          </Box>
           <IconButton
             color="inherit"
             component={Link}

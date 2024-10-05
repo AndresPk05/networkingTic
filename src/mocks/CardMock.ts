@@ -1,9 +1,9 @@
 import { CardPropsWithId } from "../Components/Card/CardModel";
 import { v4 as uuidv4 } from "uuid";
-import security from '../assets/sheel.jpg'
-import network from '../assets/redes.jpg'
-import virtualization from '../assets/virtualizacion.jpg'
-import maintanence from '../assets/maintanence.jpg'
+import security from '@assets/sheel.jpg'
+import network from '@assets/redes.jpg'
+import virtualization from '@assets/virtualizacion.jpg'
+import maintanence from '@assets/maintanence.jpg'
 
 export const cardsData: CardPropsWithId[] = [
     {
