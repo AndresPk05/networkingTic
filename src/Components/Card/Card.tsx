@@ -1,7 +1,7 @@
 import React from "react";
 import { CardProps } from "./CardModel";
 import { useCard } from "./useCard";
-import { ModalInfo } from "../Modal/ModalInfo";
+import { ModalInfo, ModalService } from "../Modal/ModalInfo";
 import "./cardStyle.css";
 import { Button } from "@mui/material";
 
@@ -11,6 +11,7 @@ export const Card: React.FC<CardProps> = ({
   modalTitle,
   modalText,
   altImage,
+  modalImage
 }) => {
   const { isModalOpen, handleCardClick, closeModal } = useCard();
 
@@ -22,7 +23,9 @@ export const Card: React.FC<CardProps> = ({
         Mas Información
       </Button>
 
-      <ModalInfo
+      <ModalService
+        imageSrc={modalImage ?? ""}
+        altImage=""
         title={modalTitle}
         text={modalText}
         onClose={closeModal}

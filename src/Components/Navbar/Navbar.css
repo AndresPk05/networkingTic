@@ -7,16 +7,6 @@
   border-bottom: solid 1px var(--color-primary);
 }
 
-.navbar-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  gap: 2rem; /* Ajusta el espacio entre los iconos */
-}
-
 .navbar-item a {
   color: var(--color-text-white);
   text-decoration: none;
@@ -24,8 +14,8 @@
   font-size: 1.3rem;
 }
 
-.navbar-item img {
-  width: 6rem;
+.img-logo {
+  width: 7rem;
   height: 6rem;
 }
 

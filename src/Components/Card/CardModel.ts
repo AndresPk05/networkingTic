@@ -3,6 +3,7 @@ export interface CardProps {
   text: string;
   modalTitle: string;
   modalText: string;
+  modalImage?: string;
   altImage?: string;
 }
 

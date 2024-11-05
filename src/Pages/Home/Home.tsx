@@ -1,8 +1,8 @@
 import { Container, Grid2 } from "@mui/material";
 import principal from "../../assets/services.jpg";
 import { cardsData } from "../../mocks/CardMock";
-import { Card } from "../Card/Card";
-import { ContactForm } from "../ContactForm/ContactForm";
+import { Card } from "../../Components/Card/Card";
+import { ContactForm } from "../../Components/ContactForm/ContactForm";
 import "./Home.css";
 
 export const Home: React.FC = () => {

@@ -1,7 +1,8 @@
-import { Box, Button, Container, Grid2, TextField } from "@mui/material";
+import { Box, Button, Container, Grid2 } from "@mui/material";
 import "./ContactForm.css";
 import { Formik } from "formik";
 import { useContactForm } from "./useContactForm";
+import { CustomTextField } from "./CustomTextField";
 
 export const ContactForm: React.FC = () => {
   const { initialValues, handleOnSubmit } = useContactForm();
@@ -32,63 +33,54 @@ export const ContactForm: React.FC = () => {
                     <form onSubmit={handleSubmit}>
                       <Grid2 container spacing={2}>
                         <Grid2 size={{ md: 6, xs: 12 }}>
-                          <TextField
+                          <CustomTextField
                             type="text"
                             name="Nombre"
                             label="Nombre"
                             value={values.Nombre}
                             onChange={handleChange}
                             placeholder="Nombre"
-                            fullWidth
-                            variant="outlined"
                           />
                         </Grid2>
                         <Grid2 size={{ md: 6, xs: 12 }}>
-                          <TextField
+                          <CustomTextField
                             type="email"
                             name="Email"
                             label="Email"
                             value={values.Email}
                             onChange={handleChange}
                             placeholder="Email"
-                            fullWidth
-                            variant="outlined"
                           />
                         </Grid2>
                         <Grid2 size={{ md: 6, xs: 12 }}>
-                          <TextField
+                          <CustomTextField
                             type="text"
                             name="Telefono"
                             label="Teléfono"
                             value={values.Telefono}
                             onChange={handleChange}
                             placeholder="Teléfono"
-                            fullWidth
-                            variant="outlined"
                           />
                         </Grid2>
                         <Grid2 size={{ md: 6, xs: 12 }}>
-                          <TextField
+                          <CustomTextField
                             type="text"
                             name="Ciudad"
                             label="Ciudad"
                             value={values.Ciudad}
                             onChange={handleChange}
                             placeholder="Ciudad"
-                            fullWidth
-                            variant="outlined"
                           />
                         </Grid2>
                         <Grid2 size={{ md: 12, xs: 12 }}>
-                          <TextField
+                          <CustomTextField
+                            type="text"
                             name="Mensaje"
                             label="Mensaje"
                             value={values.Mensaje}
                             onChange={handleChange}
                             placeholder="Mensaje"
                             multiline
-                            fullWidth
-                            variant="outlined"
                           />
                         </Grid2>
                         <Button type="submit" variant="contained">
