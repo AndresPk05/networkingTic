@@ -4,7 +4,6 @@ import {
   CardContent,
   CardHeader,
   CardMedia,
-  Grid2,
   Modal,
   Typography,
 } from "@mui/material";

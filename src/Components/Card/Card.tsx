@@ -1,7 +1,7 @@
 import React from "react";
 import { CardProps } from "./CardModel";
 import { useCard } from "./useCard";
-import { ModalInfo, ModalService } from "../Modal/ModalInfo";
+import { ModalService } from "../Modal/ModalInfo";
 import "./cardStyle.css";
 import { Button } from "@mui/material";
 
