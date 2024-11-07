@@ -21,22 +21,25 @@ import ForumIcon from "@mui/icons-material/Forum";
 import { grey } from "@mui/material/colors";
 import logo from "@assets/logo3.png";
 import "./Navbar.css";
+import BusinessIcon from "@mui/icons-material/Business";
+import BlurOnIcon from '@mui/icons-material/BlurOn';
 
 export const Navbar: React.FC = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-  const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
-    if (
-      event.type === "keydown" &&
-      ((event as React.KeyboardEvent).key === "Tab" ||
-        (event as React.KeyboardEvent).key === "Shift")
-    ) {
-      return;
-    }
-    setDrawerOpen(open);
-  };
+  const toggleDrawer =
+    (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event.type === "keydown" &&
+        ((event as React.KeyboardEvent).key === "Tab" ||
+          (event as React.KeyboardEvent).key === "Shift")
+      ) {
+        return;
+      }
+      setDrawerOpen(open);
+    };
 
   const drawer = (
     <Box
@@ -48,7 +51,7 @@ export const Navbar: React.FC = () => {
       <List>
         <ListItem component={Link} href="/">
           <ListItemIcon>
-            <HomeIcon color="primary"/>
+            <HomeIcon color="primary" />
           </ListItemIcon>
           <ListItemText primary="Inicio" />
         </ListItem>
@@ -58,9 +61,21 @@ export const Navbar: React.FC = () => {
           </ListItemIcon>
           <ListItemText primary="Servicios" />
         </ListItem>
+        <ListItem component={Link} href="/partners">
+          <ListItemIcon>
+            <BlurOnIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText primary="Partners" />
+        </ListItem>
+        <ListItem component={Link} href="/conocenos">
+          <ListItemIcon>
+            <BusinessIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText primary="Nosotros" />
+        </ListItem>
         <ListItem component={Link} href="/contactanos">
           <ListItemIcon>
-            <ForumIcon  color="primary"/>
+            <ForumIcon color="primary" />
           </ListItemIcon>
           <ListItemText primary="Contáctanos" />
         </ListItem>
@@ -137,7 +152,7 @@ export const Navbar: React.FC = () => {
                 href="/partners"
                 className="navbar-item"
               >
-                <ForumIcon sx={{ color: grey[50] }} />
+                <BlurOnIcon sx={{ color: grey[50] }} />
                 <Typography variant="h6" sx={{ flexGrow: 1 }}>
                   Partners
                 </Typography>
@@ -148,7 +163,7 @@ export const Navbar: React.FC = () => {
                 href="/conocenos"
                 className="navbar-item"
               >
-                <ForumIcon sx={{ color: grey[50] }} />
+                <BusinessIcon sx={{ color: grey[50] }} />
                 <Typography variant="h6" sx={{ flexGrow: 1 }}>
                   Nosotros
                 </Typography>
