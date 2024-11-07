@@ -1,10 +1,28 @@
 {
-    "routes": [
-      {
-        "route": "/*",
-        "serve": "/index.html",
-        "statusCode": 200
-      }
-    ]
-  }
-  
+  "routes": [
+    {
+      "route": "/",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/servicios",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/partners",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/conocenos",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/contactanos",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/nosotros",
+      "rewrite": "/index.html"
+    }
+  ]
+}
