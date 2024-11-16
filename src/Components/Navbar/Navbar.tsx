@@ -19,7 +19,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
 import ForumIcon from "@mui/icons-material/Forum";
 import { grey } from "@mui/material/colors";
-import logo from "@assets/logo3.png";
+import logo from "@assets/logo4.jpeg";
 import "./Navbar.css";
 import BusinessIcon from "@mui/icons-material/Business";
 import BlurOnIcon from '@mui/icons-material/BlurOn';

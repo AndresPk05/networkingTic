@@ -1,6 +1,6 @@
 import { Facebook } from "@mui/icons-material";
 import { Box, Container, Grid2, Link, Typography } from "@mui/material";
-import logo from "@assets/logo3.png";
+import logo from "@assets/logo4.jpeg";
 import '../Footer/footerStyle.css'
 import { TikTokIcon } from "../IconsCustom/TikTokIcon";
 
