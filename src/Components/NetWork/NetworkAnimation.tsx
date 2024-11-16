@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3-force";
 import { useWindowSize } from "react-use";
+import { PropsAnimation } from "./Models";
 
 interface Node {
   id: number;
@@ -19,7 +20,7 @@ const getRandomInt = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-const AnimatedGraphBackground: React.FC<Props> = ({
+const AnimatedGraphBackground: React.FC<PropsAnimation> = ({
   width = "100%",
   height = "100%",
   nodeColor = "#3498db",

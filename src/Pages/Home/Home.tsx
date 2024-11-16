@@ -9,7 +9,13 @@ import AnimatedGraphBackground from "../../Components/NetWork/NetworkAnimation";
 export const Home: React.FC = () => {
   return (
     <main>
-      <AnimatedGraphBackground />
+      <AnimatedGraphBackground
+        width="100%"
+        height="100%"
+        nodeColor="#3498db"
+        edgeColor="#7f8c8d"
+        backgroundColor="#ffffff"
+      />
       <article>
         <section className="section-principal container">
           <img
