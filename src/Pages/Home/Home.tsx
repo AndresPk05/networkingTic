@@ -1,21 +1,12 @@
-import { Container, Grid2 } from "@mui/material";
 import principal from "../../assets/services.png";
 import { cardsData } from "../../mocks/CardMock";
-import { Card } from "../../Components/Card/Card";
 import { ContactForm } from "../../Components/ContactForm/ContactForm";
 import "./Home.css";
-import AnimatedGraphBackground from "../../Components/NetWork/NetworkAnimation";
+import { Carousel } from "../../Components/Carousel/Carousel";
 
 export const Home: React.FC = () => {
   return (
     <main>
-      <AnimatedGraphBackground
-        width="100%"
-        height="100%"
-        nodeColor="#3498db"
-        edgeColor="#7f8c8d"
-        backgroundColor="#ffffff"
-      />
       <article>
         <section className="section-principal container">
           <img
@@ -34,17 +25,7 @@ export const Home: React.FC = () => {
           </section>
         </section>
         <hr />
-        <section>
-          <Container>
-            <Grid2 container spacing={1}>
-              {cardsData.map((card) => (
-                <Grid2 key={card.id} size={{ md: 3, xs: 12 }}>
-                  <Card key={card.id} {...card} />
-                </Grid2>
-              ))}
-            </Grid2>
-          </Container>
-        </section>
+        <Carousel items={cardsData} />
         <section>
           <ContactForm />
         </section>

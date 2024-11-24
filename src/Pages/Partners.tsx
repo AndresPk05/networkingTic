@@ -5,7 +5,7 @@ import kasperskyImage from "@assets/kasperky-parnet.jpg"; // Asegúrate de tener
 export const Partners: React.FC = () => {
   return (
     <Container>
-      <Box sx={{ my: 4, padding: 5 }}>
+      <Box sx={{ my: 4, padding: 5 }} className = 'card-text-container'>
         <Typography variant="h4" component="h1" gutterBottom align="center">
           ¡Socios Oficiales de Kaspersky!
         </Typography>

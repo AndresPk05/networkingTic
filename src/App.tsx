@@ -9,6 +9,8 @@ import { Footer } from "./Components/Footer/Footer";
 import { Contactanos } from "./Pages/Contactanos";
 import { Nosotros } from "./Pages/Nosotros";
 import { Partners } from "./Pages/Partners";
+import { Services } from "./Pages/Services/Services";
+import AnimatedGraphBackground from "./Components/NetWork/NetworkAnimation";
 const theme = createTheme({
   palette: {
     primary: {
@@ -36,11 +38,18 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
+      <AnimatedGraphBackground
+        width="100%"
+        height="100%"
+        nodeColor="#3498db"
+        edgeColor="#7f8c8d"
+        backgroundColor="#ffffff"
+      />
         <Navbar />
         <div className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/servicios" element={<Contactanos />} />
+            <Route path="/servicios" element={<Services />} />
             <Route path="/partners" element={<Partners />} />
             <Route path="/conocenos" element={<Nosotros />} />
             <Route path="/contactanos" element={<Contactanos />} />

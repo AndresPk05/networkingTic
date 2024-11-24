@@ -33,7 +33,7 @@ const AnimatedGraphBackground: React.FC<PropsAnimation> = ({
   const { width: windowWidth, height: windowHeight } = useWindowSize();
 
   useEffect(() => {
-    const numberOfNodes = 80;
+    const numberOfNodes = 500;
     const initialNodes: Node[] = Array.from({ length: numberOfNodes }, (_, i) => ({
       id: i,
       x: getRandomInt(0, windowWidth),

@@ -1,4 +1,4 @@
-import { Box, createTheme, ThemeProvider } from "@mui/material";
+import { Box, createTheme, Link, ThemeProvider } from "@mui/material";
 import Fab from "@mui/material/Fab";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -21,7 +21,8 @@ export const FloatingButtons = () => {
           color="primary"
           aria-label="contactanos"
           className="floating-button"
-          onClick={handleOpenWhastapp}
+          LinkComponent={Link}
+          href="./contactanos"
         >
           <QuestionAnswerIcon />
         </Fab>

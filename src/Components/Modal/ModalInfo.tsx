@@ -1,9 +1,11 @@
 import {
   Box,
+  Button,
   Card,
   CardContent,
   CardHeader,
   CardMedia,
+  Link,
   Modal,
   Typography,
 } from "@mui/material";
@@ -99,6 +101,9 @@ export const ModalService: React.FC<ModalImageProps> = ({
               <Typography variant="body2" color="text.secondary">
                 {text}
               </Typography>
+              <Button component={Link} href="/contactanos" variant="contained" sx={{
+                marginTop: 2,
+              }}>Contactanos</Button>
             </CardContent>
           </Box>
         </Card>

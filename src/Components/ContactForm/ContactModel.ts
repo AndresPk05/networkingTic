@@ -6,6 +6,7 @@ export type TContact = {
     Mensaje: string,
     Telefono: string,
     Ciudad: string,
+    NombreEmpresa: string,
 }
 
 export type TField = {

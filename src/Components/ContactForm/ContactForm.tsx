@@ -24,7 +24,7 @@ export const ContactForm: React.FC = () => {
               <Formik
                 initialValues={initialValues}
                 onSubmit={async (values, { resetForm }) => {
-                  await handleOnSubmit(values);
+                  handleOnSubmit(values);
                   resetForm();
                 }}
               >
@@ -50,6 +50,16 @@ export const ContactForm: React.FC = () => {
                             value={values.Email}
                             onChange={handleChange}
                             placeholder="Email"
+                          />
+                        </Grid2>
+                        <Grid2 size={{ md: 12, xs: 12 }}>
+                          <CustomTextField
+                            type="text"
+                            name="NombreEmpresa"
+                            label="Nombre Empresa"
+                            value={values.NombreEmpresa}
+                            onChange={handleChange}
+                            placeholder="NombreEmpresa"
                           />
                         </Grid2>
                         <Grid2 size={{ md: 6, xs: 12 }}>
