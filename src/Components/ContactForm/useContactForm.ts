@@ -7,6 +7,7 @@ export const useContactForm = () => {
         Mensaje: "",
         Telefono: "",
         Ciudad: "",
+        NombreEmpresa: "",
     }
 
     const handleOnSubmit = (values: typeof initialValues) => {
