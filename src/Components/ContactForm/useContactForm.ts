@@ -19,7 +19,7 @@ export const useContactForm = () => {
     setError(null);
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbzddlY1MCAou6Ue4UHCgQXxIR2u0W_vuMmJ45TVBJ_b5sBQE8UYkHvA4LH5pt5U4W978g/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzwJz00G1FrVa9RLHN93RVX4hA_KrYzEfQSQqgpawIbEZgbDryqsCajelHU-85bPm6Jqg/exec", {
         method: "POST",
         mode: "no-cors",
         headers: {
