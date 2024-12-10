@@ -16,7 +16,6 @@ export const Footer = () => {
           </Grid2>
           <Grid2 size={{ md: 4, xs: 12 }}>
             <Box className="footer-links">
-              <Typography variant="h6">Secciones</Typography>
               <Link href="/" color="inherit" underline="none">
                 Inicio
               </Link>
