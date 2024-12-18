@@ -35,6 +35,7 @@ export const Footer = () => {
                 href="https://www.facebook.com/profile.php?id=100091906721223"
                 color="inherit"
                 underline="none"
+                target="_blank"
               >
                 <Box className="container-icons">
                   <Facebook />
@@ -45,6 +46,7 @@ export const Footer = () => {
                 href="https://vm.tiktok.com/ZMhx1pWLA/"
                 color="inherit"
                 underline="none"
+                target="_blank"
               >
                 <Box className="container-icons">
                   <TikTokIcon />
