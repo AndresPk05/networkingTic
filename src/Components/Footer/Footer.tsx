@@ -1,8 +1,9 @@
 import { Facebook } from "@mui/icons-material";
 import { Box, Container, Grid2, Link, Typography } from "@mui/material";
 import logo from "@assets/logo4.jpeg";
-import '../Footer/footerStyle.css'
+import "../Footer/footerStyle.css";
 import { TikTokIcon } from "../IconsCustom/TikTokIcon";
+import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 
 export const Footer = () => {
   return (
@@ -35,15 +36,25 @@ export const Footer = () => {
                 color="inherit"
                 underline="none"
               >
-                <Facebook />
+                <Box className="container-icons">
+                  <Facebook />
+                  <Typography>&nbsp;Facebook</Typography>
+                </Box>
               </Link>
               <Link
                 href="https://vm.tiktok.com/ZMhx1pWLA/"
                 color="inherit"
                 underline="none"
               >
-                <TikTokIcon />
+                <Box className="container-icons">
+                  <TikTokIcon />
+                  <Typography>TikTok</Typography>
+                </Box>
               </Link>
+              <Box className="container-icons">
+                <ContactPhoneIcon />
+                <Typography>+57 &nbsp;&nbsp;324 6365743</Typography>
+              </Box>
             </Box>
           </Grid2>
         </Grid2>

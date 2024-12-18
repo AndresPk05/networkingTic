@@ -26,3 +26,8 @@
 .footer-social a:hover {
   color: var(--color-secondary);
 }
+
+.container-icons {
+  display: flex;
+  gap: 0.5rem;
+}
