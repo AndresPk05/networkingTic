@@ -95,7 +95,7 @@ export const Navbar: React.FC = () => {
           }}
         >
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            <img src={logo} alt="logo" className="img-logo" />
+            <img src={logo} alt="logo" className="img-logo" onClick={() => {window.location.href = "/"}} />
           </Box>
           {isMobile ? (
             <>
