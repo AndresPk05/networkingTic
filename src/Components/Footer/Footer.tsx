@@ -26,6 +26,7 @@ export const Footer = () => {
               <Link href="/quien-somos" color="inherit" underline="none">
                 Quién Somos
               </Link>
+              <Typography>Bogota, Colombia</Typography>
             </Box>
           </Grid2>
           <Grid2 size={{ md: 4, xs: 12 }}>
